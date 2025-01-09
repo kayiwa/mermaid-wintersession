@@ -12,6 +12,10 @@ title  System Requirements Diagram
 accTitle: System Requirements Sequence Diagram
 accDescr: A sequence diagram that shows what interactions we are expecting the system to have
 
-participant user
-actor bugsbunny
+actor bugsbunny as User
+participant sys as Our System
+participant ext as External System
+actor bugsbunny as Curator
+
+user -> sys: do work
 ```
